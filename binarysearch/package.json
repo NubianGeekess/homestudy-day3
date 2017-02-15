@@ -1,0 +1,23 @@
+{
+  "name": "binarysearch",
+  "version": "1.0.0",
+  "description": "Search function using binary search Algorithm",
+  "main": "binarysearch.js",
+  "scripts": {
+    "test": "jasmine-node spec/binarysearch-spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oibitoye/homestudy-day3.git"
+  },
+  "keywords": [
+    "Binary",
+    "Search"
+  ],
+  "author": "Ibitoye Yussuph Olawale",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oibitoye/homestudy-day3/issues"
+  },
+  "homepage": "https://github.com/oibitoye/homestudy-day3#readme"
+}
