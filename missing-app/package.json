@@ -1,0 +1,23 @@
+{
+  "name": "missing",
+  "version": "1.0.0",
+  "description": "Algorithm to check and return difference between values of two array",
+  "main": "missing.js",
+  "scripts": {
+    "test": "jasmine-node spec/missing-spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oibitoye/homestudy-day3.git"
+  },
+  "keywords": [
+    "array",
+    "difference"
+  ],
+  "author": "Ibitoye Yussuph Olawale",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oibitoye/homestudy-day3/issues"
+  },
+  "homepage": "https://github.com/oibitoye/homestudy-day3#readme"
+}
