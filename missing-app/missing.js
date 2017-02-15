@@ -35,3 +35,4 @@ function findMissing(arr1, arr2) {
 
 }
 
+module.exports = findMissing;
