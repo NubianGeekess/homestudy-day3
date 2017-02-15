@@ -19,8 +19,19 @@ function findMissing(arr1, arr2) {
 			array1 = arr1;
 			array2 = arr2;
 		}
+
+		for (var i = 0; i < array1.length; i++) {
+			if (array1[i] !== array2[i]) {
+			//	diff.push(array1[i]);
+				diff = array1[i];
+				return_val = diff;
+			} else {
+			  return_val = 0;
+			}
+		} 
 	} else {
 	  return_val = 0;
 	} return return_val;
 
 }
+
