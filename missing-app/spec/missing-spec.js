@@ -1,4 +1,4 @@
-var findMissing = require("../app/missing.js")
+var findMissing = require("../missing.js")
 
 describe("Find missing number two lists: ", function() {
   describe("Case for en empty list", function() {

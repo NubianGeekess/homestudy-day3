@@ -9,7 +9,7 @@ see below:
 function findMissing(arr1, arr2) {
 	arr1 = arr1.sort();
 	arr2 = arr2.sort();
-	var diff = [],
+	var diff,
 		array;
 	if (arr1[0] !== undefined && arr2[0] !== undefined ) {
 		if (arr1.length < arr2.length) {
@@ -21,7 +21,8 @@ function findMissing(arr1, arr2) {
 		}
 
 		for (var i = 0; i < array1.length; i++) {
-			if (array1[i] !== array2[i]) {
+			//if (array1[i] !== array2[i]) {
+			if (array2.indexOf(array1[i]) === -1) {
 			//	diff.push(array1[i]);
 				diff = array1[i];
 				return_val = diff;
