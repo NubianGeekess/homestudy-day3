@@ -1,3 +1,9 @@
+
+(function() {
+  'use strict';
+
+  require('../binarysearch.js')
+
 describe('Binary Search to traverse an ordered list, effectively', function() {
   describe('Populate the arrays with valid content', function() {
     
@@ -74,10 +80,9 @@ describe('Binary Search to traverse an ordered list, effectively', function() {
       expect(search.count).toBeLessThan(search.length);
       expect(search.index).toBe(-1);
     });
-  });```
+  });
 
-[11:22]  
- ```describe('Get the index of the item with an expected number of loops in array [10, 20 . . . 1000]', function() {
+ describe('Get the index of the item with an expected number of loops in array [10, 20 . . . 1000]', function() {
 
     it('should return {count: /* <= 3 */, index: 3} for 40', function() {
       var search  = tenToOneThousand.search(40);
@@ -109,3 +114,5 @@ Array.prototype.indexOf = function () {
 var oneToTwenty = [].toTwenty();
 var twoToForty = [].toForty();
 var tenToOneThousand = [].toOneThousand();
+
+})();
