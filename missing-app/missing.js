@@ -10,8 +10,19 @@ function findMissing(arr1, arr2) {
 	arr1 = arr1.sort();
 	arr2 = arr2.sort();
 	var diff,
+	return_val,
 		array;
-	if (arr1[0] !== undefined && arr2[0] !== undefined ) {
+
+	// Check if both arrays have single elements
+	if (arr1.length === 1 && arr2.length === 1) {
+		return_val = 0;
+
+	// Check if both arrays are not empty
+	} else if (arr1[0] !== undefined && arr2[0] !== undefined ) {
+		
+		/* check array with highest number of element
+		The longest array is used for iteration
+		*/
 		if (arr1.length < arr2.length) {
 			array1 = arr2;
 			array2 = arr1;
@@ -21,13 +32,12 @@ function findMissing(arr1, arr2) {
 		}
 
 		for (var i = 0; i < array1.length; i++) {
-			//if (array1[i] !== array2[i]) {
 			if (array2.indexOf(array1[i]) === -1) {
-			//	diff.push(array1[i]);
+			//	
 				diff = array1[i];
 				return_val = diff;
 			} else {
-			  return_val = 0;
+			  return_val = diff;
 			}
 		} 
 	} else {
